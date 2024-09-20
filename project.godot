@@ -11,5 +11,29 @@ config_version=5
 [application]
 
 config/name="Olympic Rumble"
+run/main_scene="res://scenes/world.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+gameGlobals="*res://scripts/game_globals.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+
+[layer_names]
+
+2d_physics/layer_1="Player1Base"
+2d_physics/layer_2="Player2Base"
+2d_physics/layer_3="Player3Base"
+2d_physics/layer_4="Player4Base"
+2d_physics/layer_5="Player1Paddle"
+2d_physics/layer_6="Player2Paddle"
+2d_physics/layer_7="Player3Paddle"
+2d_physics/layer_8="Player4Paddle"
+2d_physics/layer_9="Ball"
+2d_physics/layer_10="Boundary"
